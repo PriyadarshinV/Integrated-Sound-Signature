@@ -1,0 +1,392 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C7F6FCE-27C5-47FE-85C1-BF1262445E2A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>New.Web</RootNamespace>
+    <AssemblyName>New.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplicationList>{FC643C1D-5BBB-40D4-BEFC-765CA633A670}|..\New\New.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Silverlight, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\courthouse1.wmv" />
+    <Content Include="ClientBin\New.xap" />
+    <Content Include="ClientBin\tiger.wmv" />
+    <Content Include="Default.aspx" />
+    <Content Include="adminpage.aspx" />
+    <Content Include="NewTestPage.aspx" />
+    <Content Include="NewTestPage.html" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_code\encryption.cs" />
+    <Compile Include="Admin\loginpage.aspx.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\loginpage.aspx.designer.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewuser.aspx.cs">
+      <DependentUpon>viewuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewuser.aspx.designer.cs">
+      <DependentUpon>viewuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airforce\airforceupload.aspx.cs">
+      <DependentUpon>airforceupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airforce\airforceupload.aspx.designer.cs">
+      <DependentUpon>airforceupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airforce\airlogin.aspx.cs">
+      <DependentUpon>airlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airforce\airlogin.aspx.designer.cs">
+      <DependentUpon>airlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airforce\airplay.aspx.cs">
+      <DependentUpon>airplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airforce\airplay.aspx.designer.cs">
+      <DependentUpon>airplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airforce\airreg.aspx.cs">
+      <DependentUpon>airreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airforce\airreg.aspx.designer.cs">
+      <DependentUpon>airreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence\defencedownload.aspx.cs">
+      <DependentUpon>defencedownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence\defencedownload.aspx.designer.cs">
+      <DependentUpon>defencedownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence\defenceplay.aspx.cs">
+      <DependentUpon>defenceplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence\defenceplay.aspx.designer.cs">
+      <DependentUpon>defenceplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence\defenceupload.aspx.cs">
+      <DependentUpon>defenceupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence\defenceupload.aspx.designer.cs">
+      <DependentUpon>defenceupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_code\MsgBox.cs" />
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpage.aspx.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airforce\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airforce\download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence\deflogin.aspx.cs">
+      <DependentUpon>deflogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence\deflogin.aspx.designer.cs">
+      <DependentUpon>deflogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Defence\defreg.aspx.cs">
+      <DependentUpon>defreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defence\defreg.aspx.designer.cs">
+      <DependentUpon>defreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\regindex.aspx.cs">
+      <DependentUpon>regindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\regindex.aspx.designer.cs">
+      <DependentUpon>regindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navy\navydownload.aspx.cs">
+      <DependentUpon>navydownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navy\navydownload.aspx.designer.cs">
+      <DependentUpon>navydownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navy\navylogin.aspx.cs">
+      <DependentUpon>navylogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navy\navylogin.aspx.designer.cs">
+      <DependentUpon>navylogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navy\navyplay.aspx.cs">
+      <DependentUpon>navyplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navy\navyplay.aspx.designer.cs">
+      <DependentUpon>navyplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navy\navyreg.aspx.cs">
+      <DependentUpon>navyreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navy\navyreg.aspx.designer.cs">
+      <DependentUpon>navyreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navy\navyupload.aspx.cs">
+      <DependentUpon>navyupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navy\navyupload.aspx.designer.cs">
+      <DependentUpon>navyupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ownerdata.aspx.cs">
+      <DependentUpon>Ownerdata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ownerdata.aspx.designer.cs">
+      <DependentUpon>Ownerdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service123.svc.cs">
+      <DependentUpon>Service123.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Home\loginindex.aspx.cs">
+      <DependentUpon>loginindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\loginindex.aspx.designer.cs">
+      <DependentUpon>loginindex.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service123.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <Content Include="Admin\loginpage.aspx" />
+    <Content Include="Admin\viewuser.aspx" />
+    <Content Include="Airforce\airforceupload.aspx" />
+    <Content Include="Airforce\airlogin.aspx" />
+    <Content Include="Airforce\airplay.aspx" />
+    <Content Include="Airforce\airreg.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="Defence\defencedownload.aspx" />
+    <Content Include="Defence\defenceplay.aspx" />
+    <Content Include="Defence\defenceupload.aspx" />
+    <Content Include="Airforce\download.aspx" />
+    <Content Include="Defence\deflogin.aspx" />
+    <Content Include="Defence\defreg.aspx" />
+    <Content Include="Home\home.aspx" />
+    <Content Include="images\about.jpg" />
+    <Content Include="images\arrow1.gif" />
+    <Content Include="images\article.jpg" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\CAC10TQJ.jpg" />
+    <Content Include="images\compose.jpg" />
+    <Content Include="images\contact.jpg" />
+    <Content Include="images\ContactUs-1_11-copy.png" />
+    <Content Include="images\cwc1.jpg" />
+    <Content Include="images\draft.jpg" />
+    <Content Include="images\footer_bg copy.jpg" />
+    <Content Include="images\form1-bg.gif" />
+    <Content Include="images\grey_background.gif" />
+    <Content Include="images\headingbg.jpg" />
+    <Content Include="images\home.jpg" />
+    <Content Include="images\icon_home_large.gif" />
+    <Content Include="images\inbox.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\member-bg.gif" />
+    <Content Include="images\news.jpg" />
+    <Content Include="images\newuser.jpg" />
+    <Content Include="images\pic_1.jpg" />
+    <Content Include="images\send.jpg" />
+    <Content Include="images\service.jpg" />
+    <Content Include="images\side_bg.jpg" />
+    <Content Include="images\signout.jpg" />
+    <Content Include="images\top_bg.jpg" />
+    <Content Include="images\website-header-red1.JPG" />
+    <Content Include="images\_51641143_japan_quake_sendai_464.gif" />
+    <Content Include="Image\20_22_28---Royal-Danish-Airforce-.jpg" />
+    <Content Include="Image\admin.gif" />
+    <Content Include="Image\air1.jpg" />
+    <Content Include="Image\air123.jpg" />
+    <Content Include="Image\air2.jpg" />
+    <Content Include="Image\air3.jpg" />
+    <Content Include="Image\air4.jpg" />
+    <Content Include="Image\air5.jpg" />
+    <Content Include="Image\defence-1.jpg" />
+    <Content Include="Image\defence3.jpg" />
+    <Content Include="Image\defence5.jpg" />
+    <Content Include="Image\dence2.jpg" />
+    <Content Include="Image\dence4.jpg" />
+    <Content Include="Image\india-defence-1.jpg" />
+    <Content Include="Image\indian-navy.jpg" />
+    <Content Include="Image\login.jpg" />
+    <Content Include="Image\navy1.jpg" />
+    <Content Include="Image\navy2.jpg" />
+    <Content Include="Image\navy3.jpg" />
+    <Content Include="Image\navy4.jpg" />
+    <Content Include="Image\navy5.jpg" />
+    <Content Include="Home\regindex.aspx" />
+    <Content Include="Navy\navydownload.aspx" />
+    <Content Include="Navy\navylogin.aspx" />
+    <Content Include="Navy\navyplay.aspx" />
+    <Content Include="Navy\navyreg.aspx" />
+    <Content Include="Navy\navyupload.aspx" />
+    <Content Include="Admin\Ownerdata.aspx" />
+    <Content Include="Home\loginindex.aspx" />
+    <Content Include="register.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="control\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1506</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
